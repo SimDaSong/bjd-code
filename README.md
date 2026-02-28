@@ -124,6 +124,6 @@ npm test
 
 ## 기술 스택
 
-- Node.js 24+, ESM
+- Node.js 18+, ESM
 - TypeScript, Vitest
 - csv-parse, iconv-lite, commander

@@ -1,6 +1,6 @@
 {
   "name": "bjd-code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "법정동 코드 파싱, 필터링, 트리 구조화 라이브러리",
   "type": "module",
   "main": "./dist/index.js",
@@ -33,7 +33,7 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=24.0.0"
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "commander": "^12.1.0",
