@@ -6,7 +6,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "bjd": "./dist/cli/index.js"
+    "bjd": "./dist/cli/index.js",
+    "bjd-code": "./dist/cli/index.js"
   },
   "exports": {
     ".": {

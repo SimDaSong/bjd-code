@@ -5,7 +5,7 @@ import { dirname } from 'node:path';
 import { DATA_DIR, DEFAULT_CSV_PATH } from '../utils/paths.js';
 
 const DOWNLOAD_URL =
-  'https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000002647058&fileDetailSn=1';
+  'https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003205363&fileDetailSn=1';
 
 export interface DownloadOptions {
   /** 다운로드 URL (기본: data.go.kr) */
@@ -43,7 +43,7 @@ export async function downloadCSV(options?: DownloadOptions): Promise<string> {
 }
 
 const MANUAL_INSTRUCTIONS = `
-1. https://www.data.go.kr/tcs/dss/selectFileDataDetailView.do?publicDataPk=15063424 접속
+1. https://www.data.go.kr/data/15123287/fileData.do 접속
 2. CSV 파일 다운로드
 3. 다운로드한 파일을 다음 경로에 저장: ${DEFAULT_CSV_PATH}
    또는 CLI 사용 시 파일 경로를 직접 지정: bjd parse ./파일경로.csv`.trim();
