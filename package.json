@@ -1,6 +1,6 @@
 {
   "name": "bjd-code",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "법정동 코드 파싱, 필터링, 트리 구조화 라이브러리",
   "type": "module",
   "main": "./dist/index.js",

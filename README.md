@@ -1,6 +1,6 @@
 # bjd-code (법정동 코드)
 
-[국토교통부_전국 법정동 CSV](https://www.data.go.kr/tcs/dss/selectFileDataDetailView.do?publicDataPk=15063424) 데이터를 파싱, 필터링, 트리 구조화하는 Node.js/TypeScript 라이브러리.
+[국토교통부_법정동코드 CSV](https://www.data.go.kr/data/15123287/fileData.do) 데이터를 파싱, 필터링, 트리 구조화하는 Node.js/TypeScript 라이브러리.
 
 ## 기능
 
@@ -27,6 +27,16 @@ bjd parse --pretty
 bjd filter --level sido --pretty
 bjd tree --pretty
 bjd search 강남구
+```
+
+### 설치 없이 바로 실행 (npx)
+
+```bash
+npx bjd-code download
+npx bjd-code parse --pretty
+npx bjd-code filter --level sido --pretty
+npx bjd-code tree --pretty
+npx bjd-code search 강남구
 ```
 
 ## 사용법
