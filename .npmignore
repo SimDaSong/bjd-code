@@ -1,0 +1,9 @@
+src/
+tests/
+data/
+tsconfig.json
+tsconfig.build.json
+.gitignore
+.idea/
+.vscode/
+.claude/

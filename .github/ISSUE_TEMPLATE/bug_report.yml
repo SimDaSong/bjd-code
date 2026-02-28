@@ -1,0 +1,36 @@
+name: 버그 리포트
+description: 버그를 발견하셨나요?
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 설명
+      description: 어떤 문제가 발생했나요?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 재현 방법
+      description: 버그를 재현할 수 있는 단계를 알려주세요.
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 동작
+      description: 어떻게 동작해야 하나요?
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js 버전
+      placeholder: "20.11.0"
+  - type: input
+    id: package-version
+    attributes:
+      label: bjd-code 버전
+      placeholder: "0.1.0"

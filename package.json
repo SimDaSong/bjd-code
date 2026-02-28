@@ -1,0 +1,48 @@
+{
+  "name": "bjd-code",
+  "version": "1.0.0",
+  "description": "법정동 코드 파싱, 필터링, 트리 구조화 라이브러리",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "bjd": "./dist/cli/index.js",
+    "bjd-code": "./dist/cli/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "법정동",
+    "bjd",
+    "korea",
+    "address",
+    "administrative-district"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "csv-parse": "^5.6.0",
+    "iconv-lite": "^0.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
